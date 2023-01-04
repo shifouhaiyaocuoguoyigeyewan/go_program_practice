@@ -16,14 +16,14 @@ func main() {
 	var n int            //n给出的正整数
 	var tag byte         //tag符号，byte类型，相当于uint8(0-255)
 	var sum, nextSum int //sum需要符号数量，nextSum下轮符号总数量
-	//_, _ = fmt.Scanf("%d %c", &n, &tag)
-	n = 19
-	tag = 255
+	_, _ = fmt.Scanf("%d %c", &n, &tag)
+	//n = 19
+	//tag = 255
 
 	sum = 1
 	nextSum = 1
 	i := 1 //i符号行数
-	last := 0
+	last := 0 //多出数
 	for { // 先是计算出所需要多少的符号
 		i += 2
 		nextSum += i * 2
