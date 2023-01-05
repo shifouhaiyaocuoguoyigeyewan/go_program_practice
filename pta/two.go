@@ -47,8 +47,8 @@ func main() {
 		}
 		fmt.Println() // 最后记得要换行
 	}
-	for j := 3; j <= i; j = j + 2 {
-		var space = (i - j) / 2 //再打印下半部分
+	for j := 3; j <= i; j = j + 2 { //再打印下半部分
+		var space = (i - j) / 2
 		for k := 0; k < i-space; k++ {
 			if k < space {
 				fmt.Printf(" ") //再打印*
